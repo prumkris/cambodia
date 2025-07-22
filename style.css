@@ -6,10 +6,11 @@
 
 html, body {
     height: 100%;
+
 }
 
 .header {
-    background-image: url("./background.jpg");
+    background-image: url("./img/wp3304555-hd-angkor-wat-wallpaper.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,6 +20,8 @@ html, body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    font-size: 30px;
+    transition: 0.3s;
 }
 a {
     text-decoration: none;
@@ -28,35 +31,70 @@ a {
 }
 .logo:hover {
     color: rgb(248, 129, 152);
+    text-decoration: underline;
 }
 .header-main a:hover {
     color: rgb(0, 119, 255);
+    text-decoration: underline;
 }
 .header-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 20px;
     justify-content: space-evenly;
     height: 8vh;
     background-color: rgba(36, 155, 252, 0.445);
+    align-items: center;
 }
 .logo {
-    width: 50%;
+    width: 20%;
+    text-align: center;
 }
 .header-main {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     
 }
 .welcome {
-    height: 80%;
-    width: 100%;
+    height: 40%;
+    width: 80%;
     text-align: left;
-    font-size: xx-large;
+    font-size: 50px;
     margin: auto;
-    padding-left:10% ;
-    padding-top: ;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 20px ;
+    padding-top: 10%;
+    color: rgb(255, 255, 255);
+    transition: 1s;
 }
+button {
+    background-color: rgba(255, 255, 255, 0.589);
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    border-radius: 100%;
+    border: 0;
+    transition: 1s;
+}
+button:hover {
+    background-color: rgba(106, 192, 250, 0.651);
+
+}
+.buttons {
+   width: 100%; 
+   display: flex;
+   justify-content: space-between;
+   padding: 50px;
+}
+.cambodia {
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    color: rgb(160, 62, 62);
+    transition: 1s;
+}
+
