@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.header {
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%),
+    url("../img/wp3304555-hd-angkor-wat-wallpaper.jpg");
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    transition: 0.3s;
+}
+a {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    transition: 0.5s;
+
+}
+.logo:hover {
+    color: rgb(248, 129, 152);
+    text-decoration: underline;
+}
+.header-main a:hover {
+    color: rgb(0, 119, 255);
+    text-decoration: underline;
+}
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 8vh;
+    background-color: rgba(36, 155, 252, 0.445);
+    align-items: center;
+}
+.logo {
+    width: 20%;
+    text-align: center;
+}
+.header-main {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.monument {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+#monuments-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.monument1,.monument2 {
+    width: 45%; /* Two cards in one line */
+    height: 600px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-decoration: underline;
+}
+p {
+    font-size: x-large;
+}
+.img img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.img {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    height: 50%;
+    padding: 50px;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 768px) {
+    .monument {
+        width: 100%;
+    }
+}
+  /* Responsive for small screens */
