@@ -120,11 +120,6 @@ p {
 }
 
 /* Responsive: stack on smaller screens */
-@media (max-width: 768px) {
-    .monument {
-        width: 100%;
-    }
-}
   /* Responsive for small screens */
 /* Default desktop styles */
 .monument-container {
@@ -148,13 +143,21 @@ p {
 }
 
 /* Tablet — 3-column to 2-column */
+/* Mobile styles */
 @media (max-width: 768px) {
-  .monument-item {
-    flex: 0 1 calc(50% - 1.5rem);
-    margin-bottom: 1.5rem;
+  header {
+    /* Make header match style.css—e.g., centered logo, hamburger menu, bigger padding */
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto 1rem;
+  }
+
+  .cards-container {
+    display: block;
   }
 }
-
 /* Mobile — 2-column to 1-column, adjust font sizes */
 @media (max-width: 480px) {
   .monument-container {
