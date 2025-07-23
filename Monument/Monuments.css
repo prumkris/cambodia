@@ -1,178 +1,164 @@
+/* ===== Reset & Base ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
+  height: 100%;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #fff;
 }
 
+/* ===== Header Section ===== */
 .header {
-    background-image: 
+  background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%),
     url("../img/wp3304555-hd-angkor-wat-wallpaper.jpg");
-    height: 1000px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    transition: 0.3s;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  transition: 0.3s;
 }
-a {
-    text-decoration: none;
-    color: rgb(238, 238, 238);
-    transition: 0.5s;
 
-}
-.logo:hover {
-    color: rgb(248, 129, 152);
-    text-decoration: underline;
-}
-.header-main a:hover {
-    color: rgb(0, 119, 255);
-    text-decoration: underline;
-}
 .header-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 8vh;
-    background-color: rgba(36, 155, 252, 0.445);
-    align-items: center;
-}
-.logo {
-    width: 20%;
-    text-align: center;
-}
-.header-main {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
-.monument {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: underline;
-}
-#monuments-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-.monument1,.monument2 {
-    width: 45%; /* Two cards in one line */
-    height: 600px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    text-decoration: underline;
-}
-p {
-    font-size: x-large;
-}
-.img img {
-    width: 50%;
-    height: 300px;
-    object-fit: cover;
-
-}
-.img {
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-}
-
-.info {
-    height: 50%;
-    padding: 50px;
-    font-size: 18px;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-/* Responsive: stack on smaller screens */
-  /* Responsive for small screens */
-/* Default desktop styles */
-.monument-container {
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(36, 155, 252, 0.445);
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.monument-item {
-  flex: 0 1 calc(33% - 2rem);
-  border: 1px solid #ccc;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.logo {
+  width: 20%;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
 }
 
-.monument-item img {
+.logo:hover {
+  color: rgb(248, 129, 152);
+  text-decoration: underline;
+}
+
+.header-main {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-main a {
+  color: #eee;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.header-main a:hover {
+  color: rgb(0, 119, 255);
+  text-decoration: underline;
+}
+
+/* ===== Monument Title ===== */
+.monument {
   width: 100%;
   height: auto;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+/* ===== Monuments Container & Cards ===== */
+#monuments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.monument1, .monument2 {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Image Section */
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
   display: block;
 }
 
-/* Tablet — 3-column to 2-column */
-/* Mobile styles */
-@media (max-width: 768px) {
-  header {
-    /* Make header match style.css—e.g., centered logo, hamburger menu, bigger padding */
-  }
-
-  .card {
-    width: 100%;
-    margin: 0 auto 1rem;
-  }
-
-  .cards-container {
-    display: block;
-  }
+/* Info Section */
+.info {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-/* Mobile — 2-column to 1-column, adjust font sizes */
-@media (max-width: 480px) {
-  .monument-container {
-    flex-direction: column;
-    gap: 1rem;
+
+/* Headings and paragraphs */
+h1 {
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* ===== Desktop Styles ===== */
+@media (min-width: 768px) {
+  #monuments-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
-  .monument-item {
-    flex: 1 1 100%;
-    padding: 0.75rem;
+
+  .monument1, .monument2 {
+    width: 45%;
+    height: auto;
+    flex-direction: row;
   }
-  .monument-item h2 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+
+  .img {
+    width: 50%;
+    height: 100%;
   }
-  .monument-item p {
-    font-size: 1rem;
+
+  .img img {
+    height: 100%;
+  }
+
+  .info {
+    width: 50%;
+    text-align: left;
+    align-items: flex-start;
+    padding: 40px;
   }
 }
