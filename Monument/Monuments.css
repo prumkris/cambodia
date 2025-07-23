@@ -126,3 +126,50 @@ p {
     }
 }
   /* Responsive for small screens */
+/* Default desktop styles */
+.monument-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.monument-item {
+  flex: 0 1 calc(33% - 2rem);
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.monument-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet — 3-column to 2-column */
+@media (max-width: 768px) {
+  .monument-item {
+    flex: 0 1 calc(50% - 1.5rem);
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Mobile — 2-column to 1-column, adjust font sizes */
+@media (max-width: 480px) {
+  .monument-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .monument-item {
+    flex: 1 1 100%;
+    padding: 0.75rem;
+  }
+  .monument-item h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .monument-item p {
+    font-size: 1rem;
+  }
+}
